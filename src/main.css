@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-  width: 1240px;
-  margin: 0 auto;
-  padding: 0 20px;
-  padding-top: 30px;
+@layer base {
+  h1 {
+    font-weight: 700;
+    font-display: 72px;
+  }
+}
+
+@layer utilities {
+  .flex-y-center {
+    @apply flex items-center;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-x-center {
+    @apply flex justify-center;
+  }
+
+  .flex-center-between {
+    @apply flex items-center justify-between;
+  }
 }

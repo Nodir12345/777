@@ -10,7 +10,9 @@ module.exports = {
         inputborder:"#EAEDF0",
         bordercolor:"#8E9297",
         blue:"#388FF3",
+
         textcolor:"#8E9297",
+        productcolor:"#63676C",
         logo:{
           grey:'#EAEDF0'
         },
