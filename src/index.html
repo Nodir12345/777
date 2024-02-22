@@ -1,148 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <title>777</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./output.css" />
-  <title>777</title>
-</head>
-
-<body class="bg-logo-grey">
-  <div class="max-w-[1200px] mx-auto">
-    <header class="max-w-[1200px] bg-white px-7 py-5 fixed w-[100%] z-10 max-sm:px-0">
-      <div class="flex items-center justify-between relative">
-        <div class="flex gap-2">
-          <img src="./img/language.png" alt="language " />
-          <p class="text-gree">Русский</p>
-          <img src="./img/down.svg" alt="down" />
-          <a class="ml-3 max-md:hidden" href="tel:973883127">📞 973667829</a>
-        </div>
-        <img class="absolute top-0 left-[41%] p-3 bg-white rounded-xl max-sm:w-32 max-sm:left-[35%]"
-          src="./img/logo.png" alt="logo777" />
-        <div class="flex items-center gap-6">
-          <div class="flex items-center gap-2">
-            <img src="./img/heart.png" alt="heart" />
-            <p class="max-md:hidden">Избранные</p>
-          </div>
-          <button class="flex items-center gap-2 bg-logo-grey px-6 py-2.5 rounded-lg">
-            <p class="max-md:hidden">Войти</p>
-            <img src="./img/login-04.png" alt="login" />
-          </button>
-        </div>
-      </div>
-    </header>
-
+  <body class="bg-logo-grey">
     <main>
-      <section class="kategory">
+      <section class="category">
         <div class="w-full h-20 bg-white"></div>
-        <div class="py-10 bg-white mt-24 relative">
-          <div class="absolute w-full -top-8">
-            <form class="relative max-w-[500px] mx-auto mb-10">
-              <input class="border-solid border-2 border-black rounded-lg w-full pl-5 py-4" type="text"
-                placeholder=" 🔍 Что вы ищите?" />
-              <button class="bg-black text-white px-6 py-2 rounded-lg absolute top-2 right-3">
-                Поиск
-              </button>
-            </form>
-          </div>
+        <div class="bg-white">
+          <div class="container max-w-[1184px] mx-auto relative mt-24 py-10">
+            <div class="absolute w-full -top-8">
+              <div class="form_modal">
+                <form class="relative max-w-[580px] mx-auto mb-10">
+                  <img
+                    class="absolute left-2.5 top-[18px]"
+                    src="./img/search.png"
+                    alt="search"
+                  />
+                  <input
+                    class="search border-solid border-2 rounded-lg w-full pl-10 py-4"
+                    type="text"
+                    placeholder=" Что вы ищите?"
+                  />
+                  <button
+                    class="bg-black text-white px-6 py-2 rounded-lg absolute top-2 right-3"
+                  >
+                    Поиск
+                  </button>
+                </form>
 
-          <div>
-            <div class="mx-auto my-0 max-w-[500px]">
-              <h1 class="text-3xl font-bold flex justify-center mb-4">
-                Категории
-              </h1>
-              <p class="text-center">
-                Вы можете найти все категории, которые вам нужны от покупателя
-              </p>
+                <div class="search_data hidden">
+                  <img class="mx-auto" src="./img/not_serch.svg" alt="search" />
+                </div>
+              </div>
             </div>
 
-            <div class="mt-10 flex-center-between flex-wrap gap-10 pl-[18px]">
-              <article
-                class="flex justify-stretch items-center border-solid border-2 border-logo-grey rounded-lg max-w-[380px] pr-3 shadow-inner max-[796]: mx-auto">
-                <img class="-ml-10" src="./img/Image.png" alt="women" />
-                <div class="flex-center-between gap-10">
-                  <div class="flex flex-col w-56">
-                    <h3 class="text-xl font-semibold">Для женщин</h3>
-                    <p>4 147 объявлений</p>
+            <div>
+              <div class="mx-auto my-0 max-w-[500px]">
+                <h1 class="text-3xl font-bold flex justify-center mb-4">
+                  Категории
+                </h1>
+                <p class="text-center">
+                  Вы можете найти все категории, которые вам нужны от покупателя
+                </p>
+              </div>
+
+              <div
+                class="categoryList mt-10 flex-center-between flex-wrap gap-x-[72px] gap-y-8 pl-[18px]"
+              >
+                <article
+                  class="flex justify-stretch items-center border-solid border-2 border-logo-grey rounded-lg max-w-[340px] h-[95px] pr-3 shadow-inner max-[796]: mx-auto relative pl-11 py-[22px]"
+                >
+                  <img
+                    class="absolute -left-[50px] mt-1"
+                    src="./img/Image.png"
+                    alt="car "
+                  />
+                  <div class="flex-center-between gap-10">
+                    <div class="flex flex-col w-56">
+                      <h3 class="text-lg font-semibold">Для женщин</h3>
+                      <p class="text-sm">4 147 объявлений</p>
+                    </div>
+                    <button class="text-2xl font-bold opacity-8">
+                      <img src="./img/chevron-right.png" alt="right " />
+                    </button>
                   </div>
-                  <button class="text-2xl font-bold opacity-8">
-                    <img src="./img/chevron-right.png" alt="right " />
-                  </button>
-                </div>
-              </article>
-              <article
-                class="flex justify-stretch items-center border-solid border-2 border-logo-grey rounded-lg max-w-[380px] pr-3 shadow-inner max-[796]: mx-auto">
-                <img class="-ml-10" src="./img/Image.png" alt="women" />
-                <div class="flex-center-between gap-10">
-                  <div class="flex flex-col w-56">
-                    <h3 class="text-xl font-semibold">Для женщин</h3>
-                    <p>4 147 объявлений</p>
-                  </div>
-                  <button class="text-2xl font-bold opacity-8">
-                    <img src="./img/chevron-right.png" alt="right " />
-                  </button>
-                </div>
-              </article>
-              <article
-                class="flex justify-stretch items-center border-solid border-2 border-logo-grey rounded-lg max-w-[380px] pr-3 shadow-inner max-[796]: mx-auto">
-                <img class="-ml-10" src="./img/Image.png" alt="women" />
-                <div class="flex-center-between gap-10">
-                  <div class="flex flex-col w-56">
-                    <h3 class="text-xl font-semibold">Для женщин</h3>
-                    <p>4 147 объявлений</p>
-                  </div>
-                  <button class="text-2xl font-bold opacity-8">
-                    <img src="./img/chevron-right.png" alt="right " />
-                  </button>
-                </div>
-              </article>
-              <article
-                class="flex justify-stretch items-center border-solid border-2 border-logo-grey rounded-lg max-w-[380px] pr-3 shadow-inner max-[796]: mx-auto">
-                <img class="-ml-10" src="./img/Image.png" alt="women" />
-                <div class="flex-center-between gap-10">
-                  <div class="flex flex-col w-56">
-                    <h3 class="text-xl font-semibold">Для женщин</h3>
-                    <p>4 147 объявлений</p>
-                  </div>
-                  <button class="text-2xl font-bold opacity-8">
-                    <img src="./img/chevron-right.png" alt="right " />
-                  </button>
-                </div>
-              </article>
-              <article
-                class="flex justify-stretch items-center border-solid border-2 border-logo-grey rounded-lg max-w-[380px] pr-3 shadow-inner max-[796]: mx-auto">
-                <img class="-ml-10" src="./img/Image.png" alt="women" />
-                <div class="flex-center-between gap-10">
-                  <div class="flex flex-col w-56">
-                    <h3 class="text-xl font-semibold">Для женщин</h3>
-                    <p>4 147 объявлений</p>
-                  </div>
-                  <button class="text-2xl font-bold opacity-8">
-                    <img src="./img/chevron-right.png" alt="right " />
-                  </button>
-                </div>
-              </article>
-              <article
-                class="flex justify-stretch items-center border-solid border-2 border-logo-grey rounded-lg max-w-[380px] pr-3 shadow-inner max-[796]: mx-auto">
-                <img class="-ml-10" src="./img/Image.png" alt="women" />
-                <div class="flex-center-between gap-10">
-                  <div class="flex flex-col w-56">
-                    <h3 class="text-xl font-semibold">Для женщин</h3>
-                    <p>4 147 объявлений</p>
-                  </div>
-                  <button class="text-2xl font-bold opacity-8">
-                    <img src="./img/chevron-right.png" alt="right " />
-                  </button>
-                </div>
-              </article>
+                </article>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="obleveniya bg-logo-grey py-12">
+      <section class="obleveniya bg-logo-grey py-12 max-w-[1184px] mx-auto">
         <div class="mx-auto my-0 max-w-[500px]">
           <h1 class="text-3xl font-bold flex justify-center mb-4">
             Объявления
@@ -152,279 +89,22 @@
           </p>
         </div>
 
-        <div class="flex flex-center-between flex-wrap gap-2">
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/cap.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/car.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/cap.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/car.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/cap.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/car.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/cap.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/car.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/cap.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/car.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/cap.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="bg-white flex flex-col max-w-60 rounded-xl mt-8 max-sm:mx-auto max-[600px]:w-48">
-            <div class="relative">
-              <img class="rounded-t-xl" src="./img/car.png" alt="car" />
-              <img class="absolute top-1 left-1" src="./img/s.svg" alt="heart" />
-            </div>
-
-            <div class="flex flex-col p-5 max-sm:px-2">
-              <span class="bg-logo-grey w-20 text-xs px-1 text-textcolor">г. Ташкент</span>
-              <h3 class="text-sm font-semibold text-blue my-5">
-                Кепки Corneliani Diamond for him edition.
-              </h3>
-              <p class="text-xs px-1 text-textcolor">Вчера, 19:20</p>
-              <p class="text-sm font-normal text-textcolor mb-4 mt-2">
-                +998 71 200 70 07
-              </p>
-              <div class="text-2xl font-semibold">
-                2 599 000 <span class="text-lg text-blue">uzs</span>
-              </div>
-            </div>
-          </article>
+        <div class="productBox flex flex-center-between flex-wrap gap-2">
+     <!-- //products -->
         </div>
 
-        <button
-          class="flex-y-center pl-8 pr-4 pt-4 pb-4 rounded-xl bg-logo-grey border border-[#8b8a8a] mx-auto gap-1 mt-10 text-lg font-semibold">
+        <a href="./slider.html"
+          class="flex-y-center pl-8 pr-4 pt-4 pb-4 rounded-2xl bg-logo-grey border border-[#8b8a8a] mx-auto gap-1 mt-10 text-lg font-semibold  w-[236px]"
+        >
           Загрузить больше
           <img src="./img/doubledown.svg" alt="down" />
-        </button>
+        </a>
       </section>
     </main>
-    <footer class="bg-white mt-5 py-10 flex flex-col items-center relative bg-[url('./img/limp.png')] bg-center">
-      <img class="w-[115px] -mt-18 absolute -top-8" src="./img/logo.png" alt="logo777" />
-      <p class="text-base font-bold max-w-[670px] flex items-center text-center mb-6 max-[740px]:text-xs">
-        Тот 77.uz marketplace - это виртуальная платформа в Узбекистане,
-        которая облегчает покупки и продажи, связывая продавцов с
-        потенциальными клиентами.
-      </p>
-      <div class="flex-y-center gap-16 flex-wrap max-sm:gap-3 max-[423px]:gap-16">
-        <a href="#" class="flex-y-center gap-1 mx-auto text-xl font-semibold max-[740px]:text-xs">
-          <img src="./img/symbol.png" alt="symbol" /> Доска объявлений</a>
-        <a href="#" class="flex-y-center gap-1 mx-auto text-xl font-semibold max-[740px]:text-xs">
-          <img src="./img/symbol.png" alt="symbol" />Условия пользования</a>
-        <a href="tel:973883127" class="flex-y-center gap-1 text-xl mx-auto font-semibold max-[740px]:text-xs">
-          <img src="./img/symbol.png" alt="symbol" />+998 88 500 50 00</a>
-      </div>
-    </footer>
-  </div>
-</body>
-
+  </body>
+  <script type="module" src="./js/category.js"></script>
+  <script type="module" src="./js/components.js"></script>
+  <script type="module" src="./js/modal.js"></script>
+  <script type="module" src="./js/pruduct.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </html>
